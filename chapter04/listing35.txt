@@ -1,0 +1,5 @@
+package object scala {
+  type List[+A] = scala.collection.immutable.List[A]
+  val List = scala.collection.immutable.List
+  // lots more
+}

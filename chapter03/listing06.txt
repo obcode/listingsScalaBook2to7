@@ -1,0 +1,5 @@
+var input = ""
+while (input != "quit") {
+  input = readLine()
+  println("Echo: "+input)
+}

@@ -1,0 +1,5 @@
+def addTuple: ((Int,Int)) => ((Int,Int)) => (Int,Int) = {
+  case (a,b) => {
+    case (c,d) => (a+c,b+d)
+  }
+}

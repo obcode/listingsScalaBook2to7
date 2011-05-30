@@ -1,0 +1,15 @@
+class Dog {
+  def makeNoise() {
+    println("woof, woof")
+  }
+}
+class Cat {
+  def makeNoise() {
+    println("miaow")
+  }
+}
+class Cow {
+  def makeNoise() {
+    println("moo")
+  }
+}

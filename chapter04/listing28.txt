@@ -1,0 +1,6 @@
+class HelloTwice(greeting: String)
+    extends Hello(greeting) {
+  override def hello() {
+    println(greeting+", "+greeting)
+  }
+}

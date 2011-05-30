@@ -1,0 +1,10 @@
+Code listings from my Scalabook http://scala.obraun.net/, chapters 2 to 7.
+
+Since not all listings contain working code, I have put all of them in .txt-files.
+
+In Chapter 1 there is no listing and chapters 8 to 11 are available from:
+
+* https://github.com/obcode/moviestore_testframeworks
+* https://github.com/obcode/talkallocator_lift
+* https://github.com/obcode/finalgradecalculator_scalatra
+* https://github.com/obcode/moviestore_akka

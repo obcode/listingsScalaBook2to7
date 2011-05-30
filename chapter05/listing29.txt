@@ -1,0 +1,11 @@
+case object ReadIntException extends
+    Exception("unexpected error in readIntOption")
+
+def readIntOption() = {
+  try {
+    Some(readInt)
+  } catch {
+    case _: NumberFormatException => None
+    case _ => throw ReadIntException
+  }
+}

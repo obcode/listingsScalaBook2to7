@@ -1,0 +1,4 @@
+def incList(list: List[Int]): List[Int] = {
+  if (list.isEmpty) List()
+  else list.head+1 :: incList(list.tail)
+}

@@ -1,0 +1,9 @@
+trait Bark extends Noise {
+  def makeNoise = println("Woof, woof!")
+}
+
+trait Gorge extends Food {
+  def eat = println("Gorge, gorge!")
+}
+
+class Dog extends Animal with Bark with Gorge

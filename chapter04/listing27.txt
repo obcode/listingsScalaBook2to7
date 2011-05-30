@@ -1,0 +1,6 @@
+class AlwaysHello {
+  final val greeting = "Hello"
+  def hello() {
+    println(greeting)
+  }
+}

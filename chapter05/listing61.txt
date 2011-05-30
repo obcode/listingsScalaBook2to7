@@ -1,0 +1,17 @@
+trait Noise {
+  def makeNoise: Unit
+}
+
+trait Food {
+  def eat: Unit
+}
+
+trait Animal {
+  self: Noise with Food =>
+
+  def run = {
+    makeNoise
+    eat
+    makeNoise
+  }
+}

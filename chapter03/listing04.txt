@@ -1,0 +1,7 @@
+if (args isEmpty)
+  println("Hallo Unbekannte/r")
+else
+  if (args(0) == "Oliver")
+    println("Hi")
+  else
+    println("Hallo "+args(0))

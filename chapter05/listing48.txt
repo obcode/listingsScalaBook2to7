@@ -1,0 +1,9 @@
+class Email(val header: Map[String,String],
+            private[this] var b: String) {
+  def body = b
+  override def toString: String = header+"\n"+b
+  def withBody(body: String) = {
+    b = body
+    this
+  }
+}

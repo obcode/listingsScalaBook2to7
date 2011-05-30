@@ -1,0 +1,12 @@
+package org {
+  class Org
+  package obraun {
+    class OrgObraun
+  }
+  package scala {
+    class OrgScala
+  }
+}
+package org.obraun.scalabook {
+  object OrgObraunScalabook
+}

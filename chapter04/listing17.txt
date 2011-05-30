@@ -1,0 +1,10 @@
+class Hello (greeting: String = "Hello") {
+  require(!greeting.isEmpty)
+  def hello() {
+    println(greeting)
+  }
+}
+object Hello {
+  def apply() = new Hello
+  def apply(greeting: String) = new Hello(greeting)
+}

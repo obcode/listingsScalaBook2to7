@@ -1,0 +1,13 @@
+class Hello {
+  private[this] var greet = "Hello"
+  def greeting = greet
+  def greeting_=(greeting: String) {
+    if (greet == greeting)
+      println("greeting is already set to \""+greet+"\"")
+    else {
+      greet=greeting
+      println(this)
+    }
+  }
+  // ... the rest goes here
+}

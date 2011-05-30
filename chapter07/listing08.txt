@@ -1,0 +1,16 @@
+  class SharedCounter(i: Int) extends Actor {
+    private[this] var count = 0
+    def act() {
+      var continue = true
+      loopWhile(continue) {
+        react {
+          case Increment => {
+            println("Actor "+i+": "+Thread.currentThread)
+            count += 1
+          }
+          case Stop =>  continue = false
+        }
+      }
+      println("Actor "+i+" stopped") // never reached
+    }
+  }

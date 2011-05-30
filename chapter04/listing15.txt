@@ -1,0 +1,7 @@
+class Hello(greeting: String) {
+  require(!greeting.isEmpty)
+  def this() = this("Hello")
+  def hello() {
+    println(greeting)
+  }
+}

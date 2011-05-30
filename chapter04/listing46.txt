@@ -1,0 +1,15 @@
+abstract class Input {
+  def get(): String
+}
+class ReadLineInput extends Input {
+  def get() = readLine()
+}
+class FileInput(filename: String) extends Input {
+  import scala.io.Source
+  import java.io.File
+  private[this] val contents =
+    Source fromFile (new File(filename)) getLines
+  def get() = {
+    if (contents.hasNext) contents.next() else ""
+  }
+}

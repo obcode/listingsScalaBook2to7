@@ -1,0 +1,6 @@
+class Hello(greeting: String) {
+  require(!greeting.isEmpty)
+  def hello() {
+    println(greeting)
+  }
+}

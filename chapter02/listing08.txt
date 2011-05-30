@@ -1,0 +1,10 @@
+// Scala source: Hallo.scala
+package <empty> {
+  object Hallo extends Application with scala.ScalaObject {
+    def <init>() = {
+      super.<init>();
+      ()
+    };
+    println("Hallo Leser!")
+  }
+}

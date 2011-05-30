@@ -1,0 +1,4 @@
+abstract class Lecture
+case class Course(title: String) extends Lecture
+case class Exercise(belongsTo: Course) extends Lecture
+case class Tutorial(belongsTo: Course) extends Lecture

@@ -1,0 +1,16 @@
+object StackableTraits3 extends Application {
+
+  val inBEC = new ReadLineInputPrompt("BEC>")
+    with Blacklist with Echo with Collect {
+      val blacklist = List("Hello World")
+    }
+  inBEC.get()
+  println(inBEC.inputList)
+
+  val inCBE = new ReadLineInputPrompt("CBE>")
+    with Collect with Blacklist with Echo {
+      val blacklist = List("Hello World")
+    }
+  inCBE.get()
+  println(inCBE.inputList)
+}

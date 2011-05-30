@@ -1,0 +1,13 @@
+val checkLists: List[Any] => Unit = {
+  case Nil =>
+    println("eine leere Liste")
+  case List(_,2,_) =>
+    println("eine dreielementige Liste"+
+             " mit einer 2 an Position 2")
+  case List(_,_,_) =>
+    println("eine dreielementige Liste")
+  case _ :: _ :: Nil =>
+    println("eine zweielementige Liste")
+  case _ :: _ =>
+    println("eine nichtleere Liste")
+}

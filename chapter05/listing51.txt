@@ -1,0 +1,5 @@
+val coursesPassed = for {
+    (_,courses) <- (holgersStudy semester)
+    c <- courses
+    if c.passed
+  } yield c.name

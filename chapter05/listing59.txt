@@ -1,0 +1,8 @@
+class Foo[A](a: A) {
+  def stringLength(implicit evidence: A =:= String) =
+      a.length
+  def addIntToInt(x: Int)
+    (implicit evidence: A <:< Int): Int = a + x
+  def addDoubleToNumber(x: Double)
+    (implicit evidence: A <%< Double): Double = a + x
+}

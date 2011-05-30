@@ -1,0 +1,7 @@
+// Achtung: Type Erasure
+val doesNotWorkAsExpected: List[Any] => Unit = {
+  case _: List[String] =>
+    println("eine Liste mit Strings")
+  case _: List[Int] =>
+    println("eine Liste mit Ints")
+}

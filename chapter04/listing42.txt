@@ -1,0 +1,7 @@
+abstract class Animal extends HasAge {
+  var name: String
+  def makeNoise(): Unit
+  override def toString = {
+    name+" "+age+" year"+(if (age!=1) "s" else "")+" old"
+  }
+}

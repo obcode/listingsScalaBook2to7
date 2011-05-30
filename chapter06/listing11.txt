@@ -1,0 +1,22 @@
+import scala.util.parsing.combinator._
+class ExamParser extends RegexParsers {
+
+  val int: Parser[Int] = """\d+""".r ^^ (_.toInt)
+  val studentname: Parser[String] = """[^(]+""".r ^^
+    (_.trim)
+  val matNr: Parser[Int] = "("~>int<~"): "
+  val points: Parser[Int] =
+    int<~"""\W*Punkte?\W*=\W*""".r
+  val mark: Parser[Float] =
+    """[123],[037]|4,[03]|5,0""".r ^^
+      (_.replace(',', '.').toFloat)
+
+  val oneExam: Parser[(Student,Int,Float)] =
+    studentname~matNr~points~mark ^^ {
+      case name~nr~points~mark
+        => (new Student(name,nr), points, mark)
+    }
+
+  val exam: Parser[List[(Student,Int,Float)]] =
+    repsep(oneExam,"""\W*""".r)
+}

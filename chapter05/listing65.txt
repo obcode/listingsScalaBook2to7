@@ -1,0 +1,5 @@
+val matchOnCollections: AnyRef => Unit = {
+  case _: List[_]  => println("Eine Liste")
+  case _: Map[_,_] => println("Eine Map")
+  case _           => println("Etwas anderes")
+}

@@ -1,0 +1,9 @@
+def countAuthors(xml: scala.xml.Node): Int = {
+  xml match {
+    case <book>{ fields @ _* }</book> => {
+      for (<authors>{authors @ _*}</authors> <- fields)
+        return (authors \\ "author").length
+      return 1
+    }
+  }
+}

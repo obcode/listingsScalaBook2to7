@@ -1,0 +1,10 @@
+trait Blacklist extends Input {
+  val blacklist: List[String]
+  abstract override def get() = {
+    val input = super.get()
+    if (blacklist contains (input trim))
+      "******"
+    else
+      input
+  }
+}

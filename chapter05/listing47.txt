@@ -1,0 +1,15 @@
+implicit def stringToEmail(s: String) = {
+  import Email.email
+  val (headLines,body) = s.lines.toList span (_!="")
+  email {
+    (headLines :\ Map[String,String]())(
+      (field,map) =>
+        field match {
+          case HeaderField(k,v) => (map + (k -> v))
+          case _ => map
+        }
+    )
+  } withBody {
+    body.tail mkString "\n"
+  }
+}

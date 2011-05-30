@@ -1,0 +1,10 @@
+trait Collect extends Input {
+  import scala.collection.mutable.ListBuffer
+  private[this] val inputs = new ListBuffer[String]
+  def inputList = inputs.toList
+  abstract override def get() = {
+    val input = super.get()
+    inputs += input
+    input
+  }
+}

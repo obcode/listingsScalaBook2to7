@@ -1,0 +1,26 @@
+object StringBuildReactor {
+
+  import scala.actors.Reactor
+  import scala.actors.Actor._
+
+  object MyStringBuildReactor extends Reactor[String] {
+    def act() = act(new StringBuilder)
+    def act(str: StringBuilder) {
+      react {
+        case "" => println(str)
+        case s => act(str ++= s)
+      }
+    }
+  }
+
+  def main(args: Array[String]) {
+
+    MyStringBuildReactor.start()
+    "Hello world and hello reader!" split
+      " " map
+       {str => str.head.toUpper + str.tail} foreach
+         {MyStringBuildReactor ! _}
+    MyStringBuildReactor ! ""
+
+  }
+}

@@ -1,0 +1,9 @@
+import java.util.Calendar
+class Dog(
+    var name: String,
+    dateOfBirth: Calendar = Calendar.getInstance // today
+    ) extends Animal(dateOfBirth) {
+  def makeNoise() {
+    println("woof, woof")
+  }
+}

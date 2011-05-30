@@ -1,0 +1,7 @@
+object ExamParserApp extends ExamParserString {
+  def main(args: Array[String]) {
+    val mayrString =
+      "Mayr, Hubertus (123456): 90 Punkte = 1,0"
+    println(parseAll(oneExam, mayrString))
+  }
+}

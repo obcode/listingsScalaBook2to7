@@ -1,0 +1,7 @@
+trait PositiveNumber {
+  val inValue: Int
+  lazy val value = {
+    require(inValue>0)
+    inValue
+  }
+}

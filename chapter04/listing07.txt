@@ -1,0 +1,17 @@
+class SharedCounter {
+  private[this] var counted = 0
+  def count() {
+    SharedCounter.increment()
+    counted += 1
+  }
+  override def toString =
+    "Current shared value is "+SharedCounter.value+
+      ". Incremented shared counter "+counted+" times."
+}
+object SharedCounter {
+  private[this] var count = 0
+  private def value = count
+  private def increment() {
+    count += 1
+  }
+}

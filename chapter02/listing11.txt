@@ -1,0 +1,14 @@
+object Hallo extends java.lang.Object with scala.Application with scala.ScalaObject {
+  def this() = { /* compiled code */ }
+}
+package Hallo$;
+final class Hallo$ extends scala.AnyRef with scala.ScalaObject with scala.Application {
+  final val executionStart: scala.Long;
+  def executionStart(): scala.Long;
+  def scala$Application$_setter_$executionStart_=(scala.Long): scala.Unit;
+  def main(scala.Array[java.lang.String]): scala.Unit;
+  def this(): scala.Unit;
+}
+object Hallo$ {
+  final val MODULE$: Hallo$;
+}

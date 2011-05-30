@@ -1,0 +1,4 @@
+object Email {
+  def email(header: Map[String,String]) =
+    new Email(header,"")
+}

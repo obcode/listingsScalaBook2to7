@@ -1,0 +1,7 @@
+def fun(x: Int) = {
+  if (x == 3) {
+    val x = 7
+    println(x)
+  }
+  println(x)
+}

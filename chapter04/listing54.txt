@@ -1,0 +1,10 @@
+class Record(title:String) {
+  override def toString = title
+}
+class Band(name: String) {
+  private var records: List[Record] = List()
+  def addRecord(record: Record) {
+    records ::= record
+  }
+  override def toString = name +": "+records
+}

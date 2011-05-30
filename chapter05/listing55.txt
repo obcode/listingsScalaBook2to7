@@ -1,0 +1,4 @@
+class ListOfPersons[T <: Person](persons: T*) {
+  val list = persons.toList
+  override def toString = list.toString
+}

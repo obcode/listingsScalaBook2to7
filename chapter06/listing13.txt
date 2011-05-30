@@ -1,0 +1,5 @@
+import scala.swing._
+
+object MyGUI extends SimpleSwingApplication {
+  def top = new MainFrame
+}

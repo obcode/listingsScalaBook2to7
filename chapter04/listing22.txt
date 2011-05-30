@@ -1,0 +1,3 @@
+class HelloAndGoodbye extends Hello {
+  def goodbye() = println("Goodbye")
+}

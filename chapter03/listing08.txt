@@ -1,0 +1,1 @@
+for (i <- 0 to args.length-1) println(args(i))

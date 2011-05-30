@@ -1,0 +1,9 @@
+class Customer {
+  var customerID: Int = _
+  object Address {
+    var street: String = _
+    var postcode: String = _
+    var city: String = _
+    var country: String = _
+  }
+}

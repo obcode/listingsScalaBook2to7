@@ -1,0 +1,4 @@
+trait PositiveNumber {
+  val value: Int
+  require(value>0)
+}

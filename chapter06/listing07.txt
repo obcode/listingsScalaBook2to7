@@ -1,0 +1,4 @@
+import scala.util.parsing.combinator._
+class MyParsers extends RegexParsers {
+  val int: Parser[String] = """\d+""".r
+}

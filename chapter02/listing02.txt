@@ -1,0 +1,11 @@
+scala> 1+2
+res0: Int = 3
+
+scala> println("Hello World!")
+Hello World!
+
+scala> println("Das Ergebnis lautet "+(1+2))
+Das Ergebnis lautet 3
+
+scala> println("Das Ergebnis lautet "+res0)
+Das Ergebnis lautet 3

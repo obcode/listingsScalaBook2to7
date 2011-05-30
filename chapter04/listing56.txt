@@ -1,0 +1,21 @@
+]
+class BandnameInput(val input: Input)
+class RecordtitleInput(val input: Input)
+class RecordLibrary {
+  private var records = Map[String,List[String]]()
+  def addInteractive(overrideEntry: Boolean = false)
+                    (implicit bandIn: BandnameInput,
+                     recordIn: RecordtitleInput) = {
+    print("Bandname: ")
+    val bandname = bandIn.input.get()
+    print("Recordtitle: ")
+    val recordtitle = recordIn.input.get()
+    records += bandname -> (records get bandname match {
+      case None     => List(recordtitle)
+      case Some(rs) =>
+        if (overrideEntry) List(recordtitle)
+        else (recordtitle :: rs)
+    })
+  }
+  override def toString = records.toString
+}

@@ -1,0 +1,1 @@
+def addTuple(a: Int,b: Int)(c: Int,d:Int) = (a+c,b+d)

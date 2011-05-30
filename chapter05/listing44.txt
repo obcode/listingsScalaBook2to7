@@ -1,0 +1,4 @@
+guessNumber (_ == 5) {
+  print("Welche Zahl suchen wir? ")
+  readInt
+}

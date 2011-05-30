@@ -1,0 +1,12 @@
+class A {
+  object B {
+    val c = 5
+  }
+  class D {
+    object E {
+      val c = 7
+    }
+    val c = 9
+  }
+  val f = new D
+}

@@ -1,0 +1,6 @@
+import scala.annotation.tailrec
+// wird nicht kompiliert, weil nicht endrekursiv
+@tailrec def sum(list: List[Int]): Int = {
+  if (list.isEmpty) 0
+  else list.head + sum(list.tail)
+}

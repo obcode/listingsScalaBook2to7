@@ -1,0 +1,5 @@
+def sum(list: List[Int]) = {
+  var sum = 0
+  for (elem <- list) sum += elem
+  sum
+}

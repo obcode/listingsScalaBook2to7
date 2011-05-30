@@ -1,0 +1,16 @@
+object Hello {
+  val defaultGreeting = "Hello"
+}
+class Hello(greeting: String = Hello.defaultGreeting) {
+  def hello() {
+    println(greeting)
+  }
+}
+class HelloAndGoodbye(
+    greeting: String = Hello.defaultGreeting,
+    farewell: String = "Goodbye"
+  ) extends Hello(greeting) {
+  def goodbye() {
+    println(farewell)
+  }
+}

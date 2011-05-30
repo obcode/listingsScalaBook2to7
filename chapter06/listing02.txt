@@ -1,0 +1,9 @@
+def equals(that: Any): Boolean = this eq that
+
+final def eq(that: AnyRef): Boolean = ...
+
+final def ne(that: AnyRef): Boolean = !(this eq that)
+
+def hashCode: Int = ...
+
+def toString: String = ...

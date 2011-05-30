@@ -1,0 +1,5 @@
+class Hello(greeting: Greeting.Value = Greeting.Hello) {
+  def hello() {
+    println(greeting)
+  }
+}

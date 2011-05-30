@@ -1,0 +1,4 @@
+def doubleList(list: List[Int]): List[Int] = {
+  if (list.isEmpty) List()
+  else list.head*2 :: doubleList(list.tail)
+}

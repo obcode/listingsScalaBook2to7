@@ -1,0 +1,5 @@
+val checkValue: Any => Unit = {
+  case i: Int    => println("ein Int: "+i)
+  case d: Double => println("ein Double: "+d)
+  case _         => println("etwas anderes")
+}

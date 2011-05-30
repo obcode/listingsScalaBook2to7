@@ -1,0 +1,7 @@
+def sum(list: List[Int]) = {
+  def sumHelper(x: Int, list: List[Int]): Int = {
+    if (list.isEmpty) x
+    else sumHelper(x+list.head, list.tail)
+  }
+  sumHelper(0,list)
+}

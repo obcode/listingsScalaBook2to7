@@ -1,0 +1,6 @@
+object StackableTraits2 extends Application {
+  val in = new MyInput
+  in.get()
+  in.get()
+  println(in.inputList)
+}

@@ -1,0 +1,8 @@
+class HelloAndGoodbye(
+    greeting: String = "Hi",
+    farewell: String = "Goodbye"
+  ) extends Hello(greeting) {
+  def goodbye() {
+    println(farewell)
+  }
+}

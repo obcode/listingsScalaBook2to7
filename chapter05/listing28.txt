@@ -1,0 +1,7 @@
+def readIntOption() = {
+  try {
+    Some(readInt)
+  } catch {
+    case _: NumberFormatException => None
+  }
+}

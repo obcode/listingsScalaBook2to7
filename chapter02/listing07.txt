@@ -1,0 +1,3 @@
+object Hallo extends Application {
+  println("Hallo Leser!")
+}

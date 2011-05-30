@@ -1,0 +1,9 @@
+object HeaderField {
+  def unapply(s: String) = {
+    val (key,value) = s.span(_!=':')
+    if (key.isEmpty || value.isEmpty)
+      None
+    else
+      Some((key,value.tail trim))
+  }
+}

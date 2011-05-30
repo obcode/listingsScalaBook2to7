@@ -1,0 +1,4 @@
+abstract class Animal {
+  var name: String
+  def makeNoise(): Unit
+}

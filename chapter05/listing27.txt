@@ -1,0 +1,5 @@
+def courseTitle: PartialFunction[Lecture,String] = {
+  case Course(title) => title
+  case Exercise(Course(title)) => title
+  case Tutorial(Course("Prog 2")) => "Prog 2"
+}

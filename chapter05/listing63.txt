@@ -1,0 +1,9 @@
+trait Tweet extends Noise {
+  def makeNoise = println("Chirp, chirp!")
+}
+
+trait Pick extends Food {
+  def eat = println("Pick, pick!")
+}
+
+class Bird extends Animal with Tweet with Pick

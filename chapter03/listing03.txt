@@ -1,0 +1,8 @@
+def haveSameElements(xs:List[Any],ys:List[Any]) = {
+  def isSubsetOf(xs:List[Any],ys:List[Any]): Boolean = {
+    for (x <- xs)
+      if (!(ys contains x)) return false
+    true
+  }
+  isSubsetOf(xs,ys) && isSubsetOf(ys,xs)
+}

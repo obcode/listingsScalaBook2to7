@@ -1,0 +1,15 @@
+val scalabook =
+  <book lang="de">
+    <title>Scala</title>
+    <author>Oliver Braun</author>
+  </book>
+
+val osgibook =
+  <book lang="de">
+    <title>OSGi für Praktiker</title>
+    <authors>
+      <author>Bernd Weber</author>
+      <author>Patrick Baumgartner</author>
+      <author>Oliver Braun</author>
+    </authors>
+  </book>

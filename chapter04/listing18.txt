@@ -1,0 +1,7 @@
+class Hello(greeting: String = "Hello") {
+  require(Hello.acceptableGreetings contains greeting)
+}
+object Hello {
+  private val acceptableGreetings =
+    List("Hello","Hi","Howdy")
+}

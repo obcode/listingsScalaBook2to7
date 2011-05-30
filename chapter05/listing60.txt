@@ -1,0 +1,16 @@
+class A { selfA =>
+  def printIt(message: String) =
+      println("A.printIt: " + message)
+  class B { selfB =>
+    def printIt(message: String) =
+        selfA.printIt("B.printIt: " + message)
+    class C {
+      def printItA(message: String) =
+          selfA.printIt("C.printItA: " + message)
+      def printItB(message: String) =
+          selfB.printIt("C.printItB: " + message)
+    }
+    val c = new C
+  }
+  val b = new B
+}

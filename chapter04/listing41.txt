@@ -1,0 +1,12 @@
+import java.util.Calendar
+class Dog(
+    var name: String,
+    val dateOfBirth: Calendar = Calendar.getInstance
+    ) extends Animal with HasAge {
+  def makeNoise() {
+    println("woof, woof")
+  }
+  override def toString = {
+    name+" "+age+" year"+(if (age!=1) "s" else "")+" old"
+  }
+}

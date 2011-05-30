@@ -1,0 +1,7 @@
+val holgersStudy = Study(
+  Map(1 -> List(Course("Prog 1",     true,  5),
+                Course("OS 1",       false, 3),
+                Course("Networks 1", true,  3)),
+      2 -> List(Course("Prog 2",     true,  5),
+                Course("OS 2",       false, 3),
+                Course("Networks 2", false, 3))))

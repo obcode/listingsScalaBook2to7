@@ -1,0 +1,4 @@
+case class Course(name: String,
+                  passed: Boolean,
+                  creditPoints: Int)
+case class Study(semester: Map[Int,List[Course]])

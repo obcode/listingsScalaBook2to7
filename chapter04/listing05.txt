@@ -1,0 +1,11 @@
+object Currency {
+  var exchangeRate = 2.0f
+}
+class Currency {
+  var euro   = 0.0f
+  def dollar = euro * Currency.exchangeRate
+  def dollar_= (m: Float) {
+    euro = m / Currency.exchangeRate
+  }
+  override def toString = euro+" EUR / "+dollar+" USD"
+}

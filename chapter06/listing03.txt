@@ -1,0 +1,7 @@
+def author(name: String) =
+<author>
+  { if (name == "Oliver") <me />
+      else <name>{name}</name> }
+</author>
+println(author("Oliver"))
+println(author("Jon Spencer"))

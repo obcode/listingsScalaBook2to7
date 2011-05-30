@@ -1,0 +1,7 @@
+def courseTitle(lecture: Lecture) = {
+  lecture match {
+    case Course(title) => title
+    case Exercise(Course(title)) => title
+    case Tutorial(Course(title)) => title
+  }
+}

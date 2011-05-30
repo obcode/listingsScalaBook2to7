@@ -1,0 +1,5 @@
+val printAllowedAtAgeOf: Movie => Unit = {
+  case Movie(t,0) =>
+    println(t+" (keine Altersbeschraenkung)")
+  case Movie(t,i) => println(t+" (frei ab "+i+")")
+}

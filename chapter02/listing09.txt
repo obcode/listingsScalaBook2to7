@@ -1,0 +1,15 @@
+// Scala source: Hallo.scala
+package <empty> {
+  final class Hallo extends java.lang.Object with Application with ScalaObject {
+    <stable> <accessor> def executionStart(): Long = Hallo.this.executionStart;
+    private[this] val executionStart: Long = _;
+    <accessor> def scala$Application$_setter_$executionStart_=(x$1: Long): Unit = Hallo.this.executionStart = x$1;
+    def main(args: Array[java.lang.String]): Unit = scala.Application$class.main(Hallo.this, args);
+    def this(): object Hallo = {
+      Hallo.super.this();
+      scala.Application$class./*Application$class*/$init$(Hallo.this);
+      scala.this.Predef.println("Hallo Leser!");
+      ()
+    }
+  }
+}

@@ -1,0 +1,7 @@
+trait Echo extends Input {
+  abstract override def get() = {
+    val input = super.get()
+    println(input)
+    input
+  }
+}

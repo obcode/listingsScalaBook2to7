@@ -1,0 +1,5 @@
+val checkNumber: Int => Unit = {
+  case 1      => println("eine Eins")
+  case 2      => println("eine Zwei")
+  case number => println("etwas anderes: "+number)
+}

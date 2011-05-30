@@ -1,0 +1,9 @@
+class Mountain(val name: String,
+               val height: Int) {
+  import Mountain._
+  noOfM += 1
+}
+object Mountain {
+  private var noOfM = 0
+  def numberOfMountains = noOfM
+}

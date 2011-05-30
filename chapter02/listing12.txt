@@ -1,0 +1,8 @@
+/**
+ * Hallo-Leser-Applikation
+ * @author Oliver Braun
+ * @version 1.0.0
+ */
+object Hallo extends Application {
+  println("Hallo Leser!")
+}

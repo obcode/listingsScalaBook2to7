@@ -1,0 +1,13 @@
+class Hello(var greeting: String) {
+  def hello() {
+    println(greeting)
+  }
+}
+class HelloAndGoodbye(
+  var greeting: String, // does not compile
+  var farewell: String
+  ) extends Hello(greeting) {
+  def goodbye() {
+    println(farewell)
+  }
+}

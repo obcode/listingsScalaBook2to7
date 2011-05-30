@@ -1,0 +1,11 @@
+object Greeting extends Enumeration {
+  type Greeting = Value
+  val Default = Value("Hello")
+  val Hi, Howdy = Value
+}
+import Greeting._
+class Hello(greeting: Greeting = Default) {
+  def hello() {
+    println(greeting)
+  }
+}

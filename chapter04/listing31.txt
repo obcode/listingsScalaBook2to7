@@ -1,0 +1,18 @@
+abstract class Animal {
+  def makeNoise(): Unit
+}
+class Dog extends Animal {
+  def makeNoise() {
+    println("woof, woof")
+  }
+}
+class Cat extends Animal {
+  def makeNoise() {
+    println("miaow")
+  }
+}
+class Cow extends Animal {
+  def makeNoise() {
+    println("moo")
+  }
+}

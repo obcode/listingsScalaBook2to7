@@ -1,0 +1,7 @@
+printTupleAddedTo(1,2) {
+  print("Geben Sie die erste Komponente ein: ")
+  val x = readInt
+  print("Geben Sie die zweite Komponente ein: ")
+  val y = readInt
+  (x,y)
+}

@@ -1,0 +1,3 @@
+def guessNumber(predicate: Int => Boolean)(number: Int) =
+  if(predicate(number)) println("richtig") else
+    println("falsch")

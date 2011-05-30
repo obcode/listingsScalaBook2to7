@@ -1,0 +1,5 @@
+import scala.collection.mutable.ListBuffer
+val listbuffer = ListBuffer[Int]()
+listbuffer += 1
+listbuffer ++= List(2,3,4)
+val list = listbuffer.toList

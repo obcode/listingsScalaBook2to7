@@ -1,0 +1,15 @@
+trait HasAge {
+  import java.util.Calendar
+  val dateOfBirth: Calendar
+  def age = {
+    val today =  Calendar.getInstance
+    val age = today.get(Calendar.YEAR) -
+              dateOfBirth.get(Calendar.YEAR)
+    today.set(Calendar.YEAR,
+              dateOfBirth.get(Calendar.YEAR))
+    if (today before dateOfBirth)
+      age-1
+    else
+      age
+  }
+}

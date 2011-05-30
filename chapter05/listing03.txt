@@ -1,0 +1,4 @@
+def sum(list: List[Int]): Int = {
+  if (list.isEmpty) 0
+  else list.head + sum(list.tail)
+}

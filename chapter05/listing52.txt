@@ -1,0 +1,11 @@
+val coursesPassedWithPoints = for {
+    (_,courses) <- (holgersStudy semester)
+    c <- courses
+    if c.passed
+    n = c.name
+    p = c.creditPoints
+  } yield (p,n)
+
+val creditPointsAndCoursesPassed =
+  (coursesPassedWithPoints :\ (0,List[String]())) {
+    case ((p,n),(sum,ns)) => (p+sum,n::ns)}

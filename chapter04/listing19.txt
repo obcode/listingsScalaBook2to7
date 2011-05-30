@@ -1,0 +1,3 @@
+object Greeting extends Enumeration {
+  val Hello, Hi, Howdy = Value
+}

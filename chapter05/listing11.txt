@@ -1,0 +1,5 @@
+def funList(fun: Int => Int ,list: List[Int])
+    : List[Int] = {
+  if (list.isEmpty) List()
+  else fun(list.head) :: funList(fun, list.tail)
+}

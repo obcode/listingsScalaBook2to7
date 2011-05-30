@@ -1,0 +1,13 @@
+// Das ist Java
+public final class Hallo extends java.lang.Object{
+    public static final void main(java.lang.String[]);
+    public static final void scala$Application$_setter_$executionStart_$eq(long);
+    public static final long executionStart();
+}
+public final class Hallo$ extends java.lang.Object implements scala.Application,scala.ScalaObject{
+    public static final Hallo$ MODULE$;
+    public static {};
+    public void main(java.lang.String[]);
+    public void scala$Application$_setter_$executionStart_$eq(long);
+    public long executionStart();
+}

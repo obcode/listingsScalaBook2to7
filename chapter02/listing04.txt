@@ -1,0 +1,3 @@
+$ scala -e 'val file = new java.io.File(".")
+            println(file.getAbsolutePath())'
+/home/obraun/projects/scalabuch/.

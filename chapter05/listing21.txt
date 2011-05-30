@@ -1,0 +1,7 @@
+val checkValue: Any => Unit = {
+  case (x:Int,y:Int) if x*y > 0 =>
+    println("gleiche Vorzeichen")
+  case (_:Int,_:Int) =>
+    println("verschiedene Vorzeichen")
+  case _ => println("kein Int-Tupel")
+}

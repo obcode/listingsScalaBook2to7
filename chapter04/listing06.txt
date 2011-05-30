@@ -1,0 +1,9 @@
+class Hello {
+  var greeting = "Hello"
+  def hello() {
+    println(greeting)
+  }
+  def hello(name: String) {
+    println(greeting+" "+name)
+  }
+}

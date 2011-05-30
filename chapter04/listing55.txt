@@ -1,0 +1,14 @@
+class RecordLibrary {
+  private var records = Map[String,List[String]]()
+  def addInteractive(input: Input) = {
+    print("Bandname: ")
+    val bandname = input.get()
+    print("Recordtitle: ")
+    val recordtitle = input.get()
+    records += bandname -> (records get bandname match {
+      case None     => List(recordtitle)
+      case Some(rs) => (recordtitle :: rs)
+    })
+  }
+  override def toString = records.toString
+}

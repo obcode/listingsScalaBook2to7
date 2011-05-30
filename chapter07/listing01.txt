@@ -1,0 +1,25 @@
+object TwoThreads {
+
+  def main(args: Array[String]) {
+
+    import scala.actors.Actor.actor
+
+    println("Main:  gestartet")
+
+    actor {
+      println("Actor: gestartet")
+      for (i <- 1 to 4) {
+        Thread.sleep(1000)
+        println("Actor: "+i)
+      }
+      println("Actor: fertig")
+    }
+
+    for (i <- 1 to 4) {
+      Thread.sleep(1000)
+      println("Main:  "+i)
+    }
+
+    println("Main:  fertig")
+  }
+}

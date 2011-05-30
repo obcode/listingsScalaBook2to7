@@ -1,0 +1,7 @@
+class ReadLineInputPrompt(prompt: String)
+    extends ReadLineInput {
+  override def get() = {
+    print(prompt+" ")
+    super.get()
+  }
+}

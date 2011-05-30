@@ -1,0 +1,18 @@
+object RunWithTime {
+  type Something = { def run() }
+  def runWithTime(f: Something) = {
+    import scala.compat.Platform.currentTime
+    val executionStart: Long = currentTime
+    f.run
+    val total = currentTime - executionStart
+    println("[total " + total + "ms]")
+  }
+}
+
+class RunMe {
+  def run() {
+    println("Starting")
+    Thread.sleep(1000)
+    println("Stopping")
+  }
+}

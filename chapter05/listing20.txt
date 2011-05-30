@@ -1,0 +1,9 @@
+val checkValue: Any => Unit = {
+  case (1,"Hallo") =>
+    println("ein Tupel mit einer 1 und \"Hallo\"")
+  case (_,1.2)     => println("Ein Tupel mit dem Wert"+
+                               " 1.2 an zweiter Stelle")
+  case (_,_,_)     => println("Ein Tripel")
+  case i: Int      => println("ein Int: "+i)
+  case _           => println("etwas anderes")
+}

@@ -1,0 +1,8 @@
+scala> val sum = 1 until 100 reduceLeft {(x,y) => x + y}
+sum: Int = 4950
+
+scala> for (i <- 1 to 5)
+     |   if (i % 2 == 0)
+     |     println(i+" ist gerade und zwischen 1 und 5")
+2 ist gerade und zwischen 1 und 5
+4 ist gerade und zwischen 1 und 5

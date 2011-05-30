@@ -1,0 +1,10 @@
+object CounterTest extends Application {
+  val sc1 = new SharedCounter
+  val sc2 = new SharedCounter
+  for (i <- 1 to 10) {
+    sc1.count
+    println(sc1)
+    sc2.count
+    println(sc2)
+  }
+}

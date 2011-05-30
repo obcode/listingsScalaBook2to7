@@ -1,0 +1,6 @@
+def listToArray[T](list: List[T])
+      (implicit m: ClassManifest[T]) = {
+  val xs = new Array[T](list.length)
+  for (i <- 0 until list.length) xs(i) = list(i)
+  xs
+}

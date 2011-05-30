@@ -1,0 +1,8 @@
+class HelloDefault {
+  val greeting = "Hello"
+  def hello() {
+    println(greeting)
+  }
+}
+class Hello(override val greeting: String)
+    extends HelloDefault

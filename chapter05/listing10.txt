@@ -1,0 +1,8 @@
+def incList(list: List[Int]): List[Int] = {
+  if (list.isEmpty) List()
+  else inc(list.head) :: incList(list.tail)
+}
+def doubleList(list: List[Int]): List[Int] = {
+  if (list.isEmpty) List()
+  else double(list.head) :: doubleList(list.tail)
+}
